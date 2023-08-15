@@ -2,14 +2,14 @@
     "height": 40, // Waybar height (to be removed for auto height)
     "layer": "top", // Waybar at top layer
     "modules-left": ["custom/launcher", "cpu", "memory", "custom/weather"],
-    "modules-right": ["custom/mvp", "custom/screenshot","tray", "network", "pulseaudio",  "backlight", "battery", "clock","custom/lock","custom/power-menu"],
+    "modules-right": ["custom/screenshot","tray", "network", "pulseaudio",  "backlight", "battery", "clock","custom/lock","custom/power-menu"],
     "modules-center": ["wlr/workspaces"],
     "wlr/workspaces": {
       "format": "{icon}",
       "on-click": "activate",
       "format-icons": {
-        "active": " ⚛",
-        "default": "☠",
+        "active": "󰮯",
+        "default": "",
       }
     },
     "hyprland/window": {
@@ -45,7 +45,7 @@
     },
     "network": {
         /* "format-wifi": "直", */
-        "format-wifi": "{icon}",
+        "format-wifi": "{icon} ",
         "format-ethernet": " ",
         "format-disconnected": "睊",
         "tooltip-format": "{essid}",
